@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>查重助手</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container w-75">
+        <div class="row justify-content-center mt-3">
+            <div class="input-group input-group-lg mt-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">完整句子</span>
+                </div>
+                <input type="text" id="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-lg mt-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">重复率</span>
+                </div>
+                <input type="number" id="repeat-ratio" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+            </div>
+        </div>
+        <div class="row justify-content-end mt-3">
+            <button type="button" id="calc" class="btn btn-primary btn-lg">计算</button>
+        </div>
+
+        <div class="card-deck row justify-content-center mt-5">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">总字数</h5>
+                    <h3 class="card-text" id="word-count"></h3>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">重复字数</h5>
+                    <h3 class="card-text" id="repeat-count"></h3>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">需增加非重复字数</h5>
+                    <h3 class="card-text" id="num-text-to-add"></h3>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">需要减少重复字数</h5>
+                    <h3 class="card-text" id="num-text-to-change"></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <p>
+                关于解决方案：可以选择添加建议数量的非重复字符到句子里面，
+                <strong>或者</strong>减少句子中建议数量的重复字符。
+            </p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
