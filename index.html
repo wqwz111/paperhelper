@@ -47,21 +47,31 @@
             <div class="card text-white bg-success mb-3">
                 <div class="card-body">
                     <h5 class="card-title">需增加非重复字数</h5>
-                    <h3 class="card-text" id="num-text-to-add"></h3>
+                    <div class="card-text">
+                        <h3 class="d-inline" id="num-text-to-add"></h3>
+                        <h4 class="text-warning d-inline float-right" id="new-repeat-ratio1"></h4>
+                    </div>
                 </div>
             </div>
             <div class="card text-white bg-success mb-3">
                 <div class="card-body">
                     <h5 class="card-title">需要减少重复字数</h5>
-                    <h3 class="card-text" id="num-text-to-change"></h3>
+                    <div class="card-text">
+                        <h3 class="d-inline" id="num-text-to-change"></h3>
+                        <h4 class="text-warning d-inline float-right" id="new-repeat-ratio2"></h4>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="row justify-content-center mt-5">
             <p>
-                关于解决方案：可以选择添加建议数量的非重复字符到句子里面，
-                <strong>或者</strong>减少句子中建议数量的重复字符。
+            <ul>
+                <li>关于解决方案：可以选择添加建议数量的非重复字符到句子里面，<strong>或者</strong>减少句子中建议数量的重复字符。</li>
+                <li>重复率里面只填去掉 <strong>%</strong> 后的数字。</li>
+                <li>建议修改里面的橙色字为新的重复率。</li>
+                <li>paperpass的单句重复率低于40%就视为0%。</li>
+                </ul>
             </p>
         </div>
     </div>
